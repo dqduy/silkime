@@ -10,7 +10,9 @@ jobs:
       - checkout
       - run:
          name: Chmod permissions #if permission for Gradlew Dependencies fail, use this.
-         command: sudo chmod +x ./java/project/gradlew
+         command: |
+            sudo chmod +x ./java/project/gradlew
+            sudo chmod +x ./make.sh
       - run:
           name: Build apk
           command: ./make.sh
