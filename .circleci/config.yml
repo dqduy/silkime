@@ -18,4 +18,4 @@ jobs:
           command: ./make.sh
       - run:
           name: List all files
-          command: ls -l _generate/
+          command: ls -l _generated/
