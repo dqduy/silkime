@@ -13,4 +13,4 @@ jobs:
          command: sudo chmod +x ./java/project/gradlew
       - run:
           name: Download Dependencies
-          command: ./java/project/gradlew androidDependencies
+          command: ls -l
